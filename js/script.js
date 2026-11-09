@@ -12,6 +12,7 @@ const frases = [
 const cores = ["#fde68a", "#bfdbfe", "#bbf7d0", "#fbcfe8"];
 
 botaoapagar.addEventListener("click", () => {
+    const i = Math.floor(Math.random() * frases.length);
     retorno.textContent = frases [i];
     retorno.style.backgroundColor = cores[i];
     retorno.style.fontSize = "24px";
