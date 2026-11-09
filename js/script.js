@@ -1,4 +1,5 @@
 const botaocriar = document.getElementById("botaocriar");
+const botaoapagar = document.getElementById("botaoapagar")
 const retorno = document.getElementById("retorno");
 
 botaocriar.addEventListener("click", () => {
@@ -8,5 +9,14 @@ botaocriar.addEventListener("click", () => {
     retorno.style.textAlign = "center";
     retorno.style.padding =  "10px";
     retorno.style.borderradius = "8px";
-    retorno.textContent = "ola, meu nome e davi";
+    retorno.textContent = "ola, meu nome e davi!";
 });
+
+botaoapagar.addEventListener("click", () => {
+retorno.textContent = "";
+retorno.style.backgroundColor = "";
+retorno.style.color = "";
+retorno.style.fontSize = "";
+retorno.style.padding = "";
+retorno.style.borderradius = "";
+})
