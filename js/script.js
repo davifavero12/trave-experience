@@ -1,10 +1,10 @@
 const botaocriar = document.getElementById("botaocriar");
-const botaoapagar = document.getElementById("boaaoapagar");
+const botaoapagar = document.getElementById("botaoapagar");
 const retorno = document.getElementById("retorno");
 
 const frases = [
     "voce esta arrasando! 🚀",
-    "hora de acordar! 💻",
+    "hora de codar! 💻",
     "cafe, codigo e criatividade! ☕",
     "javascript e magita! 🌟"
 ];
@@ -19,4 +19,12 @@ botaoapagar.addEventListener("click", () => {
     retorno.style.padding = "15px";
     retorno.style.borderRadius = "10px";
     retorno.style.textAlign = "center";
+});
+botaoapagar.addEventListener("click", () => {
+    retorno.textContent = "";
+    retorno.style.background = "";
+    retorno.style.fontSize = "";
+    retorno.style.padding = "";
+    retorno.style.borderRadius = "";
+    retorno.style.textAlign = "";
 });
