@@ -20,6 +20,7 @@ botaoapagar.addEventListener("click", () => {
     retorno.style.borderRadius = "10px";
     retorno.style.textAlign = "center";
 });
+
 botaoapagar.addEventListener("click", () => {
     retorno.textContent = "";
     retorno.style.background = "";
