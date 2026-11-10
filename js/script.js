@@ -1,31 +1,15 @@
-const botaocriar = document.getElementById("botaocriar");
-const botaoapagar = document.getElementById("botaoapagar");
+const formestilo = document.getElementById("formestilo");
+const compocor = document.getElementById("campocor");
+const campopadding = document.getElementById("campopadding");
+const campotamanho = document.getElementById("campotamanho");
 const retorno = document.getElementById("retorno");
 
-const frases = [
-    "voce esta arrasando! 🚀",
-    "hora de codar! 💻",
-    "cafe, codigo e criatividade! ☕",
-    "javascript e magita! 🌟"
-];
+function aplicarestilo(event){
+    event.preventdefault();
 
-const cores = ["#fde68a", "#bfdbfe", "#bbf7d0", "#fbcfe8"];
+    retorno.style.color = campocor.value;
+    retorno.style.padding = campopadding.value + "px";
+    retorno.style.fontSize = campotamanho.value + "px";
+}
 
-botaoapagar.addEventListener("click", () => {
-    const i = Math.floor(Math.random() * frases.length);
-    retorno.textContent = frases [i];
-    retorno.style.backgroundColor = cores[i];
-    retorno.style.fontSize = "24px";
-    retorno.style.padding = "15px";
-    retorno.style.borderRadius = "10px";
-    retorno.style.textAlign = "center";
-});
-
-botaoapagar.addEventListener("click", () => {
-    retorno.textContent = "";
-    retorno.style.background = "";
-    retorno.style.fontSize = "";
-    retorno.style.padding = "";
-    retorno.style.borderRadius = "";
-    retorno.style.textAlign = "";
-});
+formestilo.addEventListener("submit", aplicarestilo);
