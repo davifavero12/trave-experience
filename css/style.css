@@ -1,4 +1,15 @@
-div{
-    font-size: 30px;
+linha{
+    display: flex;
+    justify-self: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    border-end-end-radius: 5px;
     color: blue;
 }
+caixa{
+    width: 400px;
+    background-color: white;
+    color: blue;
+    padding: 10px;
+}
+
