@@ -1,9 +1,18 @@
-.pai{
-    font-size: 30px;
+button{
+    margin-top: 20px;
+    padding: 12px 30px;
+    background-color: white;
+    color: dodgerblue;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
 }
-.filha{
-    font-size: 5em;
+button:houver{
+    background-color: blue;
+    transform: translate(-5px);
 }
-.pai{
-    font-size: large;
+.far{
+    border: 30px;
+    background-color: gray;
 }
