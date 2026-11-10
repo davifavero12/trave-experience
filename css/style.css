@@ -1,41 +1,4 @@
-html{
-    font-size: 16px;
-}
-body{
-    margin: 0;
-    background-color: #f3f4f6;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.pai{
-    width: 90%;
-    max-width: 600px;
-    margin: 40px auto;
-    padding: 1rem;
-    background-color: #e5e7eb;
-    border-radius: 0.5rem;
-}
-.filho{
-    width: 50%;
-    min-width: 260px;
-    padding: 1.5em;
-    background-color: #2563eb;
-    color: white;
-    border-radius: 0.75rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-h1{
-    font-size: 2rem;
-    margin-top: 0;
-}
-p{
-    font-size: 1rem;
-}
-button{
-    font-size: 1rem;
-    padding: 0.5em 1em;
-    border: none;
-    border-radius: 0.375rem;
-    background-color: white;
-    color: #2563eb;
-    cursor: pointer;
+div{
+    font-size: 30rem;
+    color: blue;
 }
