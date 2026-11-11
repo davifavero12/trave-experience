@@ -1,15 +1,30 @@
-linha{
+body{
     display: flex;
-    justify-self: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    border-end-end-radius: 5px;
-    color: blue;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f3f4f6;
+    font-family: Arial, sans-serif;
 }
-caixa{
-    width: 400px;
+.cartao{
+    width: 320px;
+    padding: 20px; 
     background-color: white;
-    color: blue;
-    padding: 10px;
+    border-radius: 15px; 
+    box-shadow: 0 4px 10px rgba(52, 10, 85, 320); 
+    text-align: center;
 }
-
+#ittulo{
+    font-size: 32px;
+    color: #2563eb;
+}
+button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: #2563eb;
+    font-size: 16px;
+    cursor: pointer;
+}
