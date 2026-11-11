@@ -1,52 +1,57 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Roupas</title>
     <link rel="stylesheet" href="/css/style.css">
-    <title>loja de roupas do prof dudu</title>
-    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>  
-  
+<body>
+
 <header>
-    <h1>👕loja de roupas👚</h1>
+    <h1>👕 loja de roupas</h1>
 </header>
-<main class="carrossel">
-    <div class="trilho">
+<main class="area-contado">
+    <form action="formulario">
+        <h2>fale com a gente</h2><br>
+        <label for="nome">nome</label><br><br>
+        <input type="text" id="nome" placeholder="digite seu nome" required minlength="3"><br><br>
+        <label for="email">e-mail</label><br><br>
+        <input type="email" id="email" placeholder="seu@email.com" required><br><br>
+        <label for="telefone">telefone:</label>
+        <input type="tel" id="telefone" placeholder="(51) 99999-9999">
+        <label for="nascimento">data de nascimento</label><br><br>
+        <input type="date" id="nascimento" required><br><br>
+        <label for="tamanho">tamanho (numero de 34 a 46)</label><br><br>
+        <input type="number" id="tamanho" min="34" max="46" step="2" placeholder="ex: 38"><br><br>
+        <label for="produto">produto de interesse</label>
+        <select id="produto" required>
+            <option value="">escolha um produto</option>
+            <option value="camiseta">camiseta</option>
+            <option value="calca">calça</option>
+            <option value="jaqueta">jaqueta</option>
+            <option value="tenis">tenis</option>
+            <option value="vestido">vestido</option>
+        </select>
+        <fieldset>
+            <legend>forma de contado preferida</legend>
+            <label><input type="radio" name="contado" value="email" checked><e-mai></label>
+            <label><input type="radio" name="contado" value="telefone">telefone</label>
+            <label><input type="radio" name="contado" value="whatsapp">whatsapp</label>
+        </fieldset>
+        <fieldset>
+            <legend>interesse</legend>
+            <label><input type="checkbox" name="interesse" value="promocoes">promoçoes</label>
+            <label><input type="checkbox" name="interesse" value="novidades">novidades</label>
+            <label><input type="checkbox" name="interesse" value="eventos">eventos</label>
+        </fieldset>
+        <label for="mensagem">mensagem</label>
+        <textarea name="mensagem" id="mensagem" placeholder="escreva sua duvida" maxlength="200"></textarea>
 
-        
-    <img src="img/shopping.webp" alt="camiseta preta">
-        <h2>camiseta</h2>
-        <p class="preço">r$ 49,00</p>
-    </div>
-
-    <div class="slide">
-        <img src="img/calca_jeans_super_skinny_linha_recovery_4339_1_ea9936ad0bf3088619d9c604a0daf3fa.webp" alt="">
-        <h2>calsa</h2>
-        <p class="preço">179,00</p>
-    </div>
-
-    <div class="slide">
-        <img src="img/5_d1bb6adc-5a03-4138-9538-630239778671.webp" alt="">
-        <h2>jaqueta</h2>
-        <p class="preço">r$189,00</p>
-    </div>
-
-    <div class="slide">
-        <img src="/img/03092026-idg_20260903_154451_014-f6b51c52d6299a069017889178953966-1024-1024.webp" alt="">
-        <h2>tenis</h2>
-        <p class="preço">r$229,00</p>
-    </div>
-    
-    <div class="slide">
-        <img src="img/344926-1200-1800.webp" alt="">
-        <h2>vestido</h2>
-        <p class="preço">r$300,00</p>
-
-    </div>
-</div>
+        <button type="submit">enviar</button>
+    </form>
 </main>
+
 
 </body>
 </html>
